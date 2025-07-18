@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Yashavanth U | Portfolio</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f4f4f4; color:#333; }
+    header { background:#1e1e1e; color:white; padding:30px 20px; text-align:center; }
+    section { padding:20px; max-width:900px; margin:auto; }
+    h2 { color:#444; border-bottom:2px solid #ddd; padding-bottom:5px; }
+    ul { line-height:1.6; }
+    .links a { display:inline-block; margin-right:15px; color:#1e88e5; text-decoration:none; }
+    #qrcode { margin: 20px auto; width:200px; }
+    footer { text-align:center; padding:20px; background:#1e1e1e; color:white; margin-top:40px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Yashavanth U</h1>
+    <p>B.Tech in Computer Science | Alliance University</p>
+    <p>Email: yashuvk518@gmail.com | Phone: +91‑6360593298</p>
+  </header>
+
+  <section>
+    <h2>Technical Skills</h2>
+    <ul>
+      <li><strong>Languages:</strong> C, Python</li>
+      <li><strong>Web Technologies:</strong> HTML, CSS, JavaScript, React, Node.js</li>
+      <li><strong>Databases:</strong> MySQL, MongoDB</li>
+      <li><strong>Tools:</strong> GitHub, Linux, VS Code</li>
+      <li><strong>Cloud:</strong> Microsoft Azure, AWS (Basics)</li>
+      <li><strong>Others:</strong> OOPs, DSA, Machine Learning</li>
+    </ul>
+
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>Facial Emotion Recognition:</strong> Real‑time emotion detection using OpenCV & DeepFace</li>
+      <li><strong>Credit Card Processing:</strong> Finance tracker using HTML, CSS, JS, PHP, MySQL</li>
+    </ul>
+
+    <h2>Certifications</h2>
+    <ul>
+      <li>Microsoft Azure Fundamentals (AZ‑900) – 2025</li>
+      <li>Compiler Design – NPTEL – 2025</li>
+      <li>Linux for Beginners – Infosys Springboard – 2024</li>
+      <li>Google Cloud Cybersecurity – Coursera – 2025</li>
+      <li>Programming in C++ – Coursera – 2023</li>
+    </ul>
+
+    <h2>Achievements</h2>
+    <ul>
+      <li>Microsoft Certified: Azure Fundamentals (AZ‑900)</li>
+      <li>Certified in Compiler Design via NPTEL</li>
+    </ul>
+
+    <h2>Links</h2>
+    <div class="links">
+      <a href="https://www.linkedin.com/in/yashwanth-u-b06891262" target="_blank">LinkedIn</a>
+      <a href="https://github.com/Yashuvk18" target="_blank">GitHub</a>
+      <a href="https://leetcode.com/u/yashuvk518" target="_blank">LeetCode</a>
+      <a href="https://www.hackerrank.com/profile/yashuvk518" target="_blank">HackerRank</a>
+    </div>
+
+    <h2>Scan to view this portfolio online</h2>
+    <div id="qrcode"></div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Yashavanth U – All rights reserved.</p>
+  </footer>
+
+  <!-- QRCode.js library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script>
+    // Replace with your live site URL if deployed,
+    // or use a common reachable URL you host
+    const siteURL = window.location.href;
+    new QRCode(document.getElementById("qrcode"), {
+      text: siteURL,
+      width: 200,
+      height: 200,
+      colorDark: "#000000",
+      colorLight: "#ffffff",
+      correctLevel: QRCode.CorrectLevel.H
+    });
+  </script>
+</body>
+</html>
